@@ -1,0 +1,20 @@
+Source: php-tuupola-callable-handler
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Homepage: https://github.com/tuupola/callable-handler
+Rules-Requires-Root: no
+
+Package: php-tuupola-callable-handler
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ php-psr-http-server-middleware
+Description: PSR-7 double pass and PSR-15 middleware compatibility layer
+ Compatibility layer for PSR-7 double pass and PSR-15
+ server-side middleware. Allows using callable middleware
+ as PSR-15 compatible handlers.
